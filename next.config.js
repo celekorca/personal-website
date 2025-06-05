@@ -1,22 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Static export configuration
   output: 'export',
   distDir: 'out',
+  
+  // Image optimization
   images: {
     unoptimized: true,
   },
+  
+  // React settings
   reactStrictMode: true,
-  // Disable server-side rendering for static export
+  
+  // Ensure static export works with client-side routing
   trailingSlash: true,
-  // Optional: Add basePath if you're deploying to a subdirectory
-  // basePath: '/your-base-path',
-  // Optional: Add assetPrefix if you're deploying to a custom domain
+  
+  // Optional: If you're deploying to a subdirectory
+  // basePath: '/your-subdirectory',
+  
+  // Optional: For custom domains with path prefix
   // assetPrefix: '/',
 };
-
-// For production builds, we want to export static HTML
-if (process.env.NODE_ENV === 'production') {
-  nextConfig.output = 'export';
-}
 
 module.exports = nextConfig;
