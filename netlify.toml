@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
   functions = ".netlify/functions"
 
 [build.environment]
@@ -8,11 +8,11 @@
   NODE_VERSION = "20"
   NPM_VERSION = "10.1.0"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[dev]
+  framework = "next"
+  targetPort = 3000
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  force = false
