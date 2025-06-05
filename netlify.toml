@@ -7,12 +7,20 @@
   NEXT_TELEMETRY_DISABLED = "1"
   NODE_VERSION = "20"
   NPM_VERSION = "10.1.0"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [dev]
   framework = "next"
   targetPort = 3000
 
+# Handle client-side routing
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Required for Next.js static export
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+    skip = true
