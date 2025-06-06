@@ -1,5 +1,5 @@
-import { FaExclamationTriangle, FaRegLightbulb, FaCheck, FaUserMd, FaFlask, FaPills, FaUserInjured, FaCheckCircle } from 'react-icons/fa';
-import { FaStar, FaLinkedin, FaDumbbell, FaBullseye } from 'react-icons/fa6';
+import { FaExclamationTriangle, FaRegLightbulb, FaUserMd, FaFlask, FaPills, FaUserInjured } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa6';
 import InfoTooltip from './InfoTooltip';
 import InfoCard from './InfoCard';
 import TeamMemberCard from './TeamMemberCard';
@@ -10,7 +10,7 @@ import { TeamMember, TargetAudience as TargetAudienceType, RoadmapItem } from '.
 /**
  * Main ProjectTab component that displays information about the Mely project
  */
-const ProjectTab: React.FC = () => {
+function ProjectTab() {
   // Team members data
   const teamMembers: TeamMember[] = [
     {
@@ -136,7 +136,7 @@ const ProjectTab: React.FC = () => {
         {/* The Critical Need Card */}
         <InfoCard
           title="The Critical Need"
-          description="Current neuro-diagnostics are often slow and exclusionary. There's a pressing need for faster, reliable, and accessible tools for early detection and management."
+          description="Current neuro-diagnostics are often slow and exclusionary. There&apos;s a pressing need for faster, reliable, and accessible tools for early detection and management."
           borderColor="border-red-500"
           icon={
             <>
@@ -172,185 +172,16 @@ const ProjectTab: React.FC = () => {
 
       {/* Founders & Team Section */}
       <div className="bg-gray-50 rounded-2xl shadow-xl p-8 border border-gray-200">
-        <h3 className="text-2xl font-bold text-center text-navy-800 mb-8">Founding Team</h3>
+        <h2 className="text-2xl font-bold text-center text-navy-800 mb-8">Founding Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Marsel Mano Card */}
-          <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mb-4 overflow-hidden">
-                {/* Photo placeholder */}
-                <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
-                  <span className="text-sm">Photo</span>
-                </div>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">Marsel Mano, PhD</h4>
-              <p className="text-navy-800 font-medium mb-3">Neuroscience, AI & Clinical Lead</p>
-              
-              <a 
-                href="https://linkedin.com/in/marselmano" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center text-blue-600 hover:text-blue-800 mb-4"
-              >
-                <FaLinkedin className="mr-2" />
-                LinkedIn
-              </a>
-              
-              <div className="text-left w-full">
-                <h5 className="font-semibold text-gray-800 mb-2 flex items-center">
-                  <FaDumbbell className="mr-2 text-indigo-600" />
-                  Key Strengths:
-                </h5>
-                <ul className="text-sm text-gray-700 space-y-2 pl-1">
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>PhD Neuroscience, AI/CS Master's</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>20+ yrs CNS clinical trials & biomarkers</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Patented Neurofeedback tech</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Entrepreneurial vision & drive</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Reinaldo Argjiri Card */}
-          <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-            <div className="flex flex-col items-center text-center">
-              <div className="w-32 h-32 bg-gray-200 rounded-full mb-4 overflow-hidden">
-                {/* Photo placeholder */}
-                <div className="w-full h-full bg-gray-300 flex items-center justify-center text-gray-500">
-                  <span className="text-sm">Photo</span>
-                </div>
-              </div>
-              <h4 className="text-xl font-bold text-gray-800">Reinaldo Argjiri, EMBA</h4>
-              <p className="text-navy-800 font-medium mb-3">Technology, Infrastructure & Security Lead</p>
-              
-              <a 
-                href="https://linkedin.com/in/reinaldoargjiri" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center text-blue-600 hover:text-blue-800 mb-4"
-              >
-                <FaLinkedin className="mr-2" />
-                LinkedIn
-              </a>
-              
-              <div className="text-left w-full">
-                <h5 className="font-semibold text-gray-800 mb-2 flex items-center">
-                  <FaDumbbell className="mr-2 text-indigo-600" />
-                  Key Strengths:
-                </h5>
-                <ul className="text-sm text-gray-700 space-y-2 pl-1">
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>EMBA, MS Computer Science</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>20+ yrs IT leadership (Cloud, Security)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>CISO experience, ISO 27001</span>
-                  </li>
-                  <li className="flex items-start">
-                    <FaCheckCircle className="text-green-700 mt-0.5 mr-2 flex-shrink-0" />
-                    <span>Scalable platform architecture</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          {teamMembers.map((member, index) => (
+            <TeamMemberCard key={index} member={member} />
+          ))}
         </div>
       </div>
 
       {/* Target Audience Section */}
-      <div className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
-        <h3 className="text-xl font-semibold text-gray-800 mb-6 text-center flex items-center justify-center">
-          <FaBullseye className="mr-2 text-indigo-600" />
-          Target Audience
-        </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="bg-gray-50 rounded-xl p-4 border-l-4 border-green-500">
-            <h4 className="font-semibold text-gray-800 text-sm sm:text-base mb-2 flex items-center">
-              <FaUserMd className="mr-2 text-green-600" />
-              Neurologists
-            </h4>
-            <ul className="text-xs sm:text-sm text-gray-600 space-y-1.5">
-              <li className="flex items-start">
-                <span className="text-green-500 mr-1.5 mt-0.5">•</span>
-                <span>Early and accurate diagnosis</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-green-500 mr-1.5 mt-0.5">•</span>
-                <span>Objective monitoring</span>
-              </li>
-            </ul>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-4 border-l-4 border-blue-500">
-            <h4 className="font-semibold text-gray-800 text-sm sm:text-base mb-2 flex items-center">
-              <FaFlask className="mr-2 text-blue-500" />
-              Clinical Researchers
-            </h4>
-            <ul className="text-xs sm:text-sm text-gray-600 space-y-1.5">
-              <li className="flex items-start">
-                <span className="text-blue-500 mr-1.5 mt-0.5">•</span>
-                <span>Precise patient stratification</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-500 mr-1.5 mt-0.5">•</span>
-                <span>Treatment response tracking</span>
-              </li>
-            </ul>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-4 border-l-4 border-purple-500">
-            <h4 className="font-semibold text-gray-800 text-sm sm:text-base mb-2 flex items-center">
-              <FaPills className="mr-2 text-purple-500" />
-              Pharma Companies
-            </h4>
-            <ul className="text-xs sm:text-sm text-gray-600 space-y-1.5">
-              <li className="flex items-start">
-                <span className="text-purple-500 mr-1.5 mt-0.5">•</span>
-                <span>Faster drug development</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-purple-500 mr-1.5 mt-0.5">•</span>
-                <span>Objective trial endpoints</span>
-              </li>
-            </ul>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-4 border-l-4 border-amber-500">
-            <h4 className="font-semibold text-gray-800 text-sm sm:text-base mb-2 flex items-center">
-              <FaUserInjured className="mr-2 text-amber-500" />
-              Patients (B2B2B)
-            </h4>
-            <ul className="text-xs sm:text-sm text-gray-600 space-y-1.5">
-              <li className="flex items-start">
-                <span className="text-amber-500 mr-1.5 mt-0.5">•</span>
-                <span>Remote patient monitoring</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-amber-500 mr-1.5 mt-0.5">•</span>
-                <span>Clinician supervision</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-amber-500 mr-1.5 mt-0.5">•</span>
-                <span>Enhanced accessibility</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <TargetAudience audiences={targetAudiences} />
 
       {/* Additional Info Cards */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -362,7 +193,7 @@ const ProjectTab: React.FC = () => {
               <span className="text-indigo-500 mr-2 font-bold">•</span>
               <div>
                 <span className="font-medium text-gray-800">Initial:</span>
-                <span className="text-gray-600 ml-1">Neurodegenerative diseases (Parkinson's, Alzheimer's, Schizophrenia)</span>
+                <span className="text-gray-600 ml-1">Neurodegenerative diseases (Parkinson&apos;s, Alzheimer&apos;s, Schizophrenia)</span>
               </div>
             </li>
             <li className="flex">
@@ -409,109 +240,7 @@ const ProjectTab: React.FC = () => {
       </div>
 
       {/* Strategic Roadmap Section */}
-      <div className="bg-orange-50 rounded-2xl shadow-lg p-6 border border-orange-100">
-        <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">Strategic Roadmap</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Short-Term Card */}
-          <div className="bg-gradient-to-b from-blue-50 to-white rounded-xl p-6 border-t-4 border-blue-500 shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
-              Short-Term (1-2 Yrs)
-            </div>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 text-blue-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Develop & validate Parkinson's MVP</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 text-blue-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">First pilot study</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 text-blue-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Secure seed funding</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-blue-100 flex items-center justify-center mr-3 mt-0.5 text-blue-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Initiate CE marking</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Medium-Term Card */}
-          <div className="bg-gradient-to-b from-purple-50 to-white rounded-xl p-6 border-t-4 border-purple-500 shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
-              Medium-Term (3-5 Yrs)
-            </div>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5 text-purple-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Parkinson's regulatory approval</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5 text-purple-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Commercial launch France/EU</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5 text-purple-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Expand studies (Alzheimer's, MS, Schiz.)</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-purple-100 flex items-center justify-center mr-3 mt-0.5 text-purple-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Series A funding</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Long-Term Card */}
-          <div className="bg-gradient-to-b from-teal-50 to-white rounded-xl p-6 border-t-4 border-teal-500 shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-teal-100 text-teal-800 text-xs font-semibold px-3 py-1 rounded-full inline-block mb-4">
-              Long-Term (5+ Yrs)
-            </div>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-teal-100 flex items-center justify-center mr-3 mt-0.5 text-teal-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Global leader in AI neuro-diagnostics</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-teal-100 flex items-center justify-center mr-3 mt-0.5 text-teal-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">International adoption & reimbursement</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-teal-100 flex items-center justify-center mr-3 mt-0.5 text-teal-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Expand diagnostic portfolio</span>
-              </li>
-              <li className="flex items-start">
-                <div className="flex-shrink-0 h-5 w-5 rounded-full bg-teal-100 flex items-center justify-center mr-3 mt-0.5 text-teal-500">
-                  <FaCheck className="h-3 w-3" />
-                </div>
-                <span className="text-gray-700">Implement B2B2C model</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <Roadmap items={roadmapItems} />
     </div>
   );
 }

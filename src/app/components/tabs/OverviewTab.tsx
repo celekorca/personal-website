@@ -1,6 +1,4 @@
-import { FaTabletAlt, FaDna, FaDatabase, FaBrain, FaLightbulb, FaCrosshairs } from 'react-icons/fa';
-import { FaBinoculars } from 'react-icons/fa6';
-import { BsCpuFill } from 'react-icons/bs';
+import { FaTabletAlt, FaDna, FaDatabase, FaLightbulb, FaCrosshairs, FaExclamationTriangle } from 'react-icons/fa';
 import { GiBrain } from 'react-icons/gi';
 import InfoTooltip from './InfoTooltip';
 import ProcessStep from './ProcessStep';
@@ -26,7 +24,7 @@ export default function OverviewTab() {
         </div>
         <div className="bg-gradient-to-br from-white to-blue-50 rounded-xl shadow-md p-6 border-l-4 border-blue-500 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-blue-600">
           <div className="flex items-center mb-4">
-            <FaBinoculars className="text-red-500 text-3xl mr-3" />
+            <FaExclamationTriangle className="text-yellow-500 text-3xl mr-3" />
             <h4 className="text-xl font-semibold text-navy-800">Our Vision</h4>
           </div>
           <p className="text-gray-700 text-base ml-11">To become a global leader in AI-driven neuro-diagnostics, making early detection and precise monitoring a reality for millions worldwide and ultimately enhancing brain health for all.</p>
@@ -36,7 +34,7 @@ export default function OverviewTab() {
       {/* Row 3: Single Card */}
       <div className="bg-orange-50 rounded-xl shadow-md p-8 border-l-4 border-indigo-500">
         <div className="flex justify-center mb-6">
-          <InfoTooltip content="Mely's solution utilizes engaging digital assessments (under 20 minutes, on tablets or VR headsets) to capture rich cognitive and motor data. This data is then analyzed by proprietary AI algorithms to generate objective digital biomarkers, offering a new paradigm in understanding brain health.">
+          <InfoTooltip content="Mely&apos;s solution utilizes engaging digital assessments (under 20 minutes, on tablets or VR headsets) to capture rich cognitive and motor data. This data is then analyzed by proprietary AI algorithms to generate objective digital biomarkers, offering a new paradigm in understanding brain health.">
             <h3 className="text-xl font-semibold text-navy-800 text-center inline-flex items-center">
               Our Innovative Approach
             </h3>
@@ -116,14 +114,14 @@ export default function OverviewTab() {
           <div className="mb-4">
             <div className="flex items-center">
               <h4 className="text-xl font-semibold text-navy-800">Focus Areas & Future Directions</h4>
-              <InfoTooltip content="Our initial focus is on neurodegenerative conditions like Parkinson's and Alzheimer's disease. We plan to expand into a broader range of CNS disorders, including mental health and neurodevelopmental conditions, driven by a team with deep expertise in neuroscience, AI, and clinical operations." />
+              <InfoTooltip content="Our initial focus is on neurodegenerative conditions like Parkinson&apos;s and Alzheimer&apos;s disease. We plan to expand into a broader range of CNS disorders, including mental health and neurodevelopmental conditions, driven by a team with deep expertise in neuroscience, AI, and clinical operations." />
             </div>
             <p className="text-gray-600 text-sm mt-1 italic">Baked by a team of expertise in neuroscience, AI, and clinical operations</p>
           </div>
           <ul className="space-y-2 text-base text-gray-700">
             <li className="flex items-center">
               <span className="text-purple-500 mr-2 text-lg">•</span>
-              <span>Initialy Parkinson's and Alzheimer's</span>
+              <span>Initialy Parkinson&apos;s and Alzheimer&apos;s</span>
             </li>
             <li className="flex items-center">
               <span className="text-purple-500 mr-2 text-lg">•</span>
