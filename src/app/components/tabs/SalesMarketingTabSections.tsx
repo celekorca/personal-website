@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBrain, FaUsers, FaBriefcase, FaGraduationCap, FaCheckCircle, FaLightbulb, FaStar, FaShieldAlt, FaFileAlt, FaChartLine, FaUserMd, FaRegClock, FaRocket, FaCertificate } from 'react-icons/fa';
+import { FaBrain, FaBriefcase, FaGraduationCap, FaUserMd, FaRegClock, FaChartLine, FaShieldAlt, FaLightbulb, FaCheckCircle, FaStar } from 'react-icons/fa';
 
 // Section Card Components
 function SectionCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
@@ -39,12 +39,12 @@ export default function SalesMarketingTabSections() {
           <SectionCard title="Increased Efficiency" icon={<FaRegClock className="text-green-500" />}>
             Rapid (&lt;20 min) digital tests on common devices (tablets/VR) increase accessibility and reduce assessment time.
           </SectionCard>
-          <SectionCard title="Advanced AI & Data Capture" icon={<FaBrain className="text-blue-500" />}>
+          <SectionCard title="Advanced AI &amp; Data Capture" icon={<FaBrain className="text-blue-500" />}>
             Proprietary AI analyzes complex cognitive and motor data interactions, providing deeper insights than simple digitization.
           </SectionCard>
         </SectionGrid>
         <div className="text-center text-gray-700 mt-2 max-w-2xl mx-auto">
-          <strong>Summary:</strong> Mely's key competitive advantages are its ability to rapidly generate objective and actionable digital biomarkers, its ease of access and use, and the richness of data.
+          <strong>Summary:</strong> Mely&#39;s key competitive advantages are its ability to rapidly generate objective and actionable digital biomarkers, its ease of access and use, and the richness of data.
         </div>
       </section>
 
@@ -57,7 +57,7 @@ export default function SalesMarketingTabSections() {
               <li>Improved Diagnostic Accuracy: Access to objective data to support clinical judgment.</li>
               <li>Time and Efficiency Gains: Quick tests integrating easily, freeing up time.</li>
               <li>Optimized Patient Monitoring: Objective tracking of progression for personalized adjustments.</li>
-              <li>Improved Patient Communication: Clear reports to help explain the patient's condition.</li>
+              <li>Improved Patient Communication: Clear reports to help explain the patient&#39;s condition.</li>
             </ul>
           </SectionCard>
           <SectionCard title="Pharmaceutical Companies" icon={<FaBriefcase className="text-orange-500" />}>
@@ -82,21 +82,21 @@ export default function SalesMarketingTabSections() {
       <section>
         <h2 className="text-2xl font-bold text-center text-navy-800 mb-2">Brand Identity</h2>
         <SectionGrid>
-          <SectionCard title="Trust & Reliability" icon={<FaShieldAlt className="text-green-700" />}>
+          <SectionCard title="Trust &amp; Reliability" icon={<FaShieldAlt className="text-green-700" />}>
             The Akita Inu is a symbol of loyalty. Mely aims to be a trusted partner.
           </SectionCard>
-          <SectionCard title="Innovation & Intelligence" icon={<FaLightbulb className="text-yellow-500" />}>
+          <SectionCard title="Innovation &amp; Intelligence" icon={<FaLightbulb className="text-yellow-500" />}>
             AI is at the heart of Mely, suggesting a forward-thinking, intelligent approach.
           </SectionCard>
-          <SectionCard title="Precision & Rigor" icon={<FaCheckCircle className="text-indigo-600" />}>
+          <SectionCard title="Precision &amp; Rigor" icon={<FaCheckCircle className="text-indigo-600" />}>
             Focus on biomarkers and validation reinforces an image of precision.
           </SectionCard>
-          <SectionCard title="Benevolence & Hope" icon={<FaStar className="text-orange-400" />}>
+          <SectionCard title="Benevolence &amp; Hope" icon={<FaStar className="text-orange-400" />}>
             Mely is associated with improving brain health. The Akita is a symbol of health.
           </SectionCard>
         </SectionGrid>
         <div className="text-center text-gray-700 mt-2 max-w-2xl mx-auto">
-          <strong>Summary:</strong> The brand identity aims for an image of a technologically advanced, scientifically sound company committed to improving lives.
+          <p>&bull; <strong>Healthcare Institutions</strong>: &quot;Transforming healthcare delivery through innovative AI solutions.&quot; Mely is committed to improving lives through its technologically advanced, scientifically sound approach.</p>
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBrain, FaUsers, FaBriefcase, FaGraduationCap, FaCheckCircle, FaLightbulb, FaStar, FaShieldAlt, FaFileAlt, FaChartLine, FaUserMd, FaRegClock, FaRocket, FaCertificate } from 'react-icons/fa';
+import { FaBrain, FaUsers, FaBriefcase, FaGraduationCap, FaUserMd, FaRegClock } from 'react-icons/fa';
 
 function FeatureCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (

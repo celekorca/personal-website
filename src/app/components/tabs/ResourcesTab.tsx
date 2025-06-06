@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBuilding, FaUserCircle, FaLaptop, FaChartBar, FaEuroSign, FaShieldAlt, FaCloud, FaFileAlt, FaTrademark, FaUsers, FaGraduationCap, FaBriefcase, FaCogs, FaTabletAlt, FaVrCardboard, FaServer, FaKey, FaEnvelope, FaClipboardCheck, FaChartLine, FaRegCheckCircle, FaBalanceScale, FaLightbulb } from 'react-icons/fa';
+import { FaBuilding, FaUserCircle, FaLaptop, FaUsers, FaGraduationCap, FaBriefcase, FaCogs, FaChartLine } from 'react-icons/fa';
 
 function Section({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (

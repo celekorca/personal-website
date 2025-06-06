@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserMd, FaBriefcase, FaGraduationCap, FaUser, FaHospitalAlt, FaHandshake, FaStethoscope, FaChartBar, FaEuroSign, FaGlobe, FaBullhorn, FaClipboardList, FaUsers, FaCertificate, FaFileAlt, FaRocket } from 'react-icons/fa';
+import { FaBrain, FaBriefcase, FaGraduationCap, FaUserMd, FaRegClock, FaStethoscope, FaEuroSign, FaGlobe, FaBullhorn } from 'react-icons/fa';
 
 function SectionCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
