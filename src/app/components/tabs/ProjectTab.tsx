@@ -162,8 +162,7 @@ function ProjectTab() {
             </>
           }
         >
-          <div className="flex items-center space-x-2 mt-3">
-            <span className="text-gray-500 text-sm">Compatible with:</span>
+          <div className="flex items-center space-x-3 mt-3">
             <i className="fas fa-tablet-alt text-gray-500" aria-hidden="true"></i>
             <i className="fas fa-vr-cardboard text-gray-500" aria-hidden="true"></i>
           </div>
