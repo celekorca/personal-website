@@ -31,13 +31,13 @@ export default function SalesMarketingTab() {
       <section>
         <h2 className="text-2xl font-bold text-center text-navy-800 mb-2">Key Features & Functionalities</h2>
         <p className="text-center text-gray-700 mb-8 max-w-2xl mx-auto">
-          Mely's primary offer is an artificial intelligence (AI) platform with rapid, accessible, easy-to-perform, and engaging digital tests for the early diagnosis and monitoring of neurodegenerative diseases.
+          Mely&apos;s primary offer is an artificial intelligence (AI) platform with rapid, accessible, easy-to-perform, and engaging digital tests for the early diagnosis and monitoring of neurodegenerative diseases.
         </p>
         <div className="flex flex-wrap gap-6 justify-center mb-4">
           <FeatureCard title="What is Mely?" icon={<FaBrain className="text-indigo-500" />}>
             <div className="mb-2 font-semibold">🧠 AI-Powered Platform</div>
-            Leveraging advanced AI and ML to analyze complex neuro data for deeper insights.<br />
-            <div className="mb-2 mt-2 font-semibold">📊 Objective Digital Biomarkers</div>
+            Leveraging advanced AI and ML to analyze complex neuro data for deeper insights.&lt;br /&gt;
+            &lt;div className=&quot;mb-2 mt-2 font-semibold&quot;&gt;📊 Objective Digital Biomarkers&lt;/div&gt;
             Capturing cognitive & motor data to generate rich, objective biomarkers.
             <div className="mb-2 mt-2 font-semibold">💊 Accelerating Research & Therapy</div>
             Provides robust, standardized, high-quality data for pharma and research.

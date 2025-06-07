@@ -25,7 +25,7 @@ export default function SalesMarketingTabSections() {
       <section>
         <h2 className="text-2xl font-bold text-center text-navy-800 mb-2">Positioning</h2>
         <blockquote className="text-center italic text-gray-700 mb-6 max-w-3xl mx-auto border-l-4 border-indigo-400 pl-4">
-          "Mely is the leading AI platform providing rapid, objective, and data-rich digital biomarkers for the early diagnosis and precise monitoring of neurological and mental diseases, transforming patient care and accelerating the research of new therapies."
+          &quot;Mely is the leading AI platform providing rapid, objective, and data-rich digital biomarkers for the early diagnosis and precise monitoring of neurological and mental diseases, transforming patient care and accelerating the research of new therapies.&quot;
         </blockquote>
       </section>
 

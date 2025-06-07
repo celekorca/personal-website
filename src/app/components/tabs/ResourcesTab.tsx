@@ -19,7 +19,7 @@ export default function ResourcesTab() {
       {/* Section 1: Premises */}
       <Section title="Initial and Evolving Premises Strategy" icon={<FaBuilding className="text-indigo-500" />}>  
         <div className="mb-6 text-gray-700">
-          Mely's strategy for physical or virtual premises is designed to evolve with its growth, ensuring rigorous compliance with data security regulations. Rennes is a relevant focal point given the available offerings.
+          Mely&apos;s strategy for physical or virtual premises is designed to evolve with its growth, ensuring rigorous compliance with data security regulations. Rennes is a relevant focal point given the available offerings.
         </div>
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">Initial Phase Options</h3>
@@ -66,13 +66,13 @@ export default function ResourcesTab() {
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">Specific Needs and Compliance</h3>
           <ul className="list-disc list-inside ml-4 text-gray-700">
-            <li><strong>Health Data Management (GDPR & HDS):</strong> Strict compliance for any on-premises access. 'Clean desk' policies, privacy screens, restricted access, and private rooms for sensitive meetings. Staff training is essential.</li>
-            <li><strong>R&D Spaces:</strong> Initially software-focused, needs high-performance workstations. Calm, private space for tests with external participants.</li>
+            <li><strong>Health Data Management (GDPR &amp; HDS):</strong> Strict compliance for any on-premises access. &#39;Clean desk&#39; policies, privacy screens, restricted access, and private rooms for sensitive meetings. Staff training is essential.</li>
+            <li><strong>R&amp;D Spaces:</strong> Initially software-focused, needs high-performance workstations. Calm, private space for tests with external participants.</li>
             <li><strong>Compliance Work (future office):</strong> Physical/data security, secure zones, general standards for a traditional lease.</li>
           </ul>
         </div>
         <div className="mb-6">
-          <h3 className="font-semibold text-lg mb-2">Fit-out, Layout & Financial Estimates</h3>
+          <h3 className="font-semibold text-lg mb-2">Fit-out, Layout &amp; Financial Estimates</h3>
           <div className="mb-2">For a future dedicated office, mixed layouts with open and quiet zones are ideal. Fit-out costs in France: €700/m² to €2250/m².</div>
           <ul className="list-disc list-inside ml-4 text-gray-700">
             <li><strong>Initial Phase (Years 1-2):</strong> No major work. Virtual Office: ~€600-€1,500/year. Coworking (2 desks): ~€3,300-€4,800/year. Meeting rooms: ~€200-€500/year.</li>
@@ -159,7 +159,7 @@ export default function ResourcesTab() {
             <li>Full-Stack Developer: 1, CDI, €38k-€48k. Hire Y1/Y2.</li>
             <li>Data Scientist: 0-1, CDI/Freelance, €31k-€58k. Hire Y1/Y2.</li>
           </ul>
-          <div className="mb-2 font-semibold flex items-center gap-2"><FaGraduationCap className="text-purple-500" /> Medical & Clinical Team</div>
+          <div className="mb-2 font-semibold flex items-center gap-2"><FaGraduationCap className="text-purple-500" /> Medical &amp; Clinical Team</div>
           <ul className="list-disc list-inside ml-4 text-gray-700 text-sm mb-4">
             <li>Medical Director: 1, CDI/Associate, €70k-€130k. Hire Y1.</li>
             <li>Clinical Research Associate: 1, CDI/Consultant, ~€45k. Hire End Y1.</li>
@@ -209,7 +209,7 @@ export default function ResourcesTab() {
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">IT Infrastructure and Hardware</h3>
           <ul className="list-disc list-inside ml-4 text-gray-700 mb-2">
-            <li>Cloud-first: No on-premise servers. Use HDS-certified cloud for agility and compliance.</li>
+            <li>Mely&apos;s data will be stored on secure servers in France, ensuring compliance with GDPR and HDS requirements.</li>
             <li>High-performance laptops for each team member (€1.5k-2k/unit).</li>
             <li>Tablets: 2-4 professional tablets for testing (€500-900/unit).</li>
             <li>VR Headsets: 2-3 enterprise-grade headsets (€580-700/unit).</li>

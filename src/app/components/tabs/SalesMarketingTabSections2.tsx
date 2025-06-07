@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBrain, FaBriefcase, FaGraduationCap, FaUserMd, FaRegClock, FaStethoscope, FaEuroSign, FaGlobe, FaBullhorn } from 'react-icons/fa';
+import { FaBriefcase, FaUserMd, FaStethoscope, FaEuroSign, FaGlobe, FaBullhorn } from 'react-icons/fa';
 
 function SectionCard({ title, icon, children }: { title: string; icon: React.ReactNode; children: React.ReactNode }) {
   return (
@@ -166,10 +166,10 @@ export default function SalesMarketingTabSections2() {
         <div className="text-center text-gray-700 mb-6 max-w-3xl mx-auto">
           Mely presents a promising technological offer, capable of meeting critical unmet needs in the diagnosis and monitoring of neurological and mental diseases. The proposed sales and marketing strategy aims to position Mely as an innovative and credible leader in this rapidly expanding market.
           <ul className="list-disc list-inside text-left max-w-xl mx-auto mt-2">
-            <li><strong>Pillars:</strong> Clear value proposition (speed, objectivity, accessibility).</li>
-            <li><strong>Credibility:</strong> Established by tangible proofs (CE/FDA approvals, clinical validation, publications).</li>
-            <li><strong>Strategy:</strong> Robust marketing mix and structured sales process will guide all efforts.</li>
-            <li><strong>Success Factor:</strong> Rigorous execution of this integrated strategy.</li>
+            <p>• <strong>Healthcare Professionals</strong>: &quot;Empowering your practice with AI-driven insights for better patient outcomes.&quot;</p>
+            <p>• <strong>Trust &amp; Credibility</strong>: &quot;Backed by medical experts and AI specialists&quot;, clinical validation, publications).</p>
+            <p>• <strong>Emotional Connection</strong>: &quot;Peace of mind for you and your loved ones&quot;ales process will guide all efforts.</p>
+            <p>• <strong>Healthcare Institutions</strong>: &quot;Transforming healthcare delivery through innovative AI solutions.&quot;</p>
           </ul>
         </div>
       </section>

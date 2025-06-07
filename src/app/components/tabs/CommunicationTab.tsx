@@ -101,7 +101,7 @@ export default function CommunicationTab() {
           <h3 className="font-semibold text-lg flex items-center gap-2 mb-2"><FaBullhorn className="text-orange-500" /> Crafting Our Core Message</h3>
           <div className="bg-white rounded-xl shadow p-6 mb-6 border border-gray-100">
             <div className="mb-4">
-              <span className="italic text-gray-700 block text-center text-lg font-semibold">"Mely: Revolutionizing brain health through AI-powered digital biomarkers for earlier, more objective neurological diagnosis and monitoring—transforming patient care and accelerating therapeutic innovation."</span>
+              <span className="italic text-gray-700 block text-center text-lg font-semibold">&quot;Mely: Revolutionizing brain health through AI-powered digital biomarkers for earlier, more objective neurological diagnosis and monitoring—transforming patient care and accelerating therapeutic innovation.&quot;</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div>
@@ -302,7 +302,7 @@ export default function CommunicationTab() {
           <strong>Measuring Impact & Agile Evolution:</strong> Our strategy is dynamic. We will continuously monitor performance, learn from data, and adapt our digital communication to maximize impact and achieve Mely's objectives.
         </div>
         <div className="mb-4 text-gray-700">
-          <p>&bull; <strong>Action-Oriented</strong>: &quot;Start your journey to better healthcare today&quot;</p>
+          <p>&bull; <strong>Patients &amp; Caregivers</strong>: &quot;Your health, simplified. Personalized care at your fingertips.&quot;</p>
         </div>
         <div className="text-gray-700">
           Through strategic digital communication, Mely will continue to build trust, foster collaboration, and accelerate the adoption of technologies that redefine neurological and mental healthcare.
