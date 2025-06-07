@@ -117,10 +117,10 @@ export default function SalesMarketingTabSections() {
       <section>
         <h2 className="text-2xl font-bold text-center text-navy-800 mb-2">The Promise</h2>
         <blockquote className="text-center italic text-gray-700 mb-6 max-w-3xl mx-auto border-l-4 border-indigo-400 pl-4">
-          "Revealing earlier and clearer insights into neurological health, to transform diagnostics, personalize care, and accelerate therapeutic innovation."
+          &quot;&quot;Revealing earlier and clearer insights into neurological health, to transform diagnostics, personalize care, and accelerate therapeutic innovation.&quot;&quot;
         </blockquote>
         <div className="text-center text-gray-700 mt-2 max-w-2xl mx-auto">
-          This promise encompasses Mely's commitment to providing technology that improves diagnostic accuracy and disease management, empowers clinicians with objective data, and supports the research community.
+          This promise encompasses Mely&#39;s commitment to providing technology that improves diagnostic accuracy and disease management, empowers clinicians with objective data, and supports the research community.
         </div>
       </section>
     </div>

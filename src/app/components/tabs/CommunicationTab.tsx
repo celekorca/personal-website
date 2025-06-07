@@ -127,7 +127,7 @@ export default function CommunicationTab() {
           <div className="flex flex-wrap gap-6 justify-center">
             <div className="bg-white rounded-xl shadow p-6 flex-1 min-w-[240px] max-w-[340px] border border-gray-100">
               <div className="flex items-center gap-2 mb-2"><FaGraduationCap className="text-purple-500" /> <span className="font-semibold">Educate & Inform</span></div>
-              <div className="text-gray-700 text-sm">Provide clear, evidence-based info on Mely's tech and benefits.</div>
+              <div className="text-gray-700 text-sm">Provide clear, evidence-based info on Mely&apos;s tech and benefits.</div>
             </div>
             <div className="bg-white rounded-xl shadow p-6 flex-1 min-w-[240px] max-w-[340px] border border-gray-100">
               <div className="flex items-center gap-2 mb-2"><FaShieldAlt className="text-green-700" /> <span className="font-semibold">Build Trust & Credibility</span></div>
@@ -251,10 +251,10 @@ export default function CommunicationTab() {
         <div className="mb-8">
           <h3 className="font-semibold text-lg flex items-center gap-2 mb-2"><FaGlobe className="text-blue-400" /> The Digital Hub: Website & SEO Excellence</h3>
           <ul className="list-disc list-inside ml-4 text-gray-700 text-sm">
-            <li>Inform about Mely's mission, establish credibility, and capture leads.</li>
+            <li>Inform about Mely&apos;s mission, establish credibility, and capture leads.</li>
             <li>UX/UI: Clarity, professional aesthetics, mobile-first design.</li>
             <li>Comprehensive SEO: Keyword research, on-page & technical optimization.</li>
-            <li>Strategic CTAs: "Request a Demo" or "Download Whitepaper" calls to action.</li>
+            <li>Strategic CTAs: &quot;Request a Demo&quot; or &quot;Download Whitepaper&quot; calls to action.</li>
           </ul>
         </div>
         <div className="mb-8">
@@ -299,7 +299,7 @@ export default function CommunicationTab() {
           <li>Data-Driven & Agile: Commitment to measuring impact and continuously optimizing.</li>
         </ul>
         <div className="mb-4 text-gray-700">
-          <strong>Measuring Impact &amp; Agile Evolution:</strong> Our strategy is dynamic. We will continuously monitor performance, learn from data, and adapt our digital communication to maximize impact and achieve Mely's objectives.
+          <strong>Measuring Impact &amp; Agile Evolution:</strong> Our strategy is dynamic. We will continuously monitor performance, learn from data, and adapt our digital communication to maximize impact and achieve Mely&apos;s objectives.
         </div>
         <div className="mb-4 text-gray-700">
           <p>&bull; <strong>Patients &amp; Caregivers</strong>: &quot;Your health, simplified. Personalized care at your fingertips.&quot;</p>

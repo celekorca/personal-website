@@ -98,8 +98,8 @@ export default function SalesMarketingTabSections2() {
             <li>Lead Generation: Inbound/Outbound marketing.</li>
             <li>Lead Qualification: Evaluate fit based on criteria (BANT).</li>
             <li>Initial Contact & Discovery: Understand prospect's needs and challenges.</li>
-            <li>Demo/Presentation: Personalized presentation of Mely's value.</li>
-            <li>Pilot Study/Validation: Trial phase in prospect's environment.</li>
+            <li>Demo/Presentation: Personalized presentation of Mely&apos;s value.</li>
+            <li>Pilot Study/Validation: Trial phase in prospect&apos;s environment.</li>
             <li>Proposal: Detailed offer (scope, pricing, terms).</li>
             <li>Negotiation & Closing: Finalize terms and sign contract.</li>
             <li>Onboarding & Training: Critical for adoption.</li>

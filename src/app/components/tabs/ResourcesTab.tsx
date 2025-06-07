@@ -275,7 +275,7 @@ export default function ResourcesTab() {
         </div>
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">Conclusion</h3>
-          <div className="text-gray-700">Mely's resource strategy is marked by financial prudence, flexibility, and compliance, especially for health data. A phased, scalable approach focuses resources on core business: developing innovative AI for neurological and mental health.</div>
+          <div className="text-gray-700">Mely&#39;s resource strategy is marked by financial prudence, flexibility, and compliance, especially for health data. A phased, scalable approach focuses resources on core business: developing innovative AI for neurological and mental health.</div>
         </div>
       </Section>
     </div>

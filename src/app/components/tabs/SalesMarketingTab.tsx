@@ -69,11 +69,11 @@ export default function SalesMarketingTab() {
       <section>
         <h2 className="text-2xl font-bold text-center text-navy-800 mb-2">Value Proposition</h2>
         <blockquote className="text-center italic text-gray-700 mb-6 max-w-3xl mx-auto border-l-4 border-indigo-400 pl-4">
-          "Our value is the integrated approach combining digital technologies and AI to extract clinically relevant information, enabling earlier interventions, personalized treatment, and accelerating therapeutic innovation. With faster, more objective, and more accessible tools than current methods, we aim to solve the problems of our customers:"
+          &quot;&quot;Our value is the integrated approach combining digital technologies and AI to extract clinically relevant information, enabling earlier interventions, personalized treatment, and accelerating therapeutic innovation. With faster, more objective, and more accessible tools than current methods, we aim to solve the problems of our customers:&quot;&quot;
         </blockquote>
         <div className="flex flex-wrap gap-6 justify-center">
           <ValuePropCard icon={<FaUserMd className="text-blue-500" />} title="Healthcare Providers">
-            Mely offers a solution to the lack of specific and objective diagnostic tools, particularly for diseases like Parkinson's and Alzheimer's, leading to earlier diagnoses and greater diagnostic confidence.
+            Mely offers a solution to the lack of specific and objective diagnostic tools, particularly for diseases like Parkinson&#39;s and Alzheimer&#39;s, leading to earlier diagnoses and greater diagnostic confidence.
           </ValuePropCard>
           <ValuePropCard icon={<FaBriefcase className="text-orange-500" />} title="Pharmaceutical Companies">
             Mely addresses the need for more sensitive and objective biomarkers for clinical trials in neurology, a field facing major challenges like patient recruitment and high failure rates.
