@@ -97,7 +97,7 @@ export default function SalesMarketingTabSections2() {
           <ol className="list-decimal list-inside text-left max-w-xl mx-auto mt-2">
             <li>Lead Generation: Inbound/Outbound marketing.</li>
             <li>Lead Qualification: Evaluate fit based on criteria (BANT).</li>
-            <li>Initial Contact & Discovery: Understand prospect's needs and challenges.</li>
+            <li>Initial Contact &amp; Discovery: Understand prospect&apos;s needs and challenges.</li>
             <li>Demo/Presentation: Personalized presentation of Mely&apos;s value.</li>
             <li>Pilot Study/Validation: Trial phase in prospect&apos;s environment.</li>
             <li>Proposal: Detailed offer (scope, pricing, terms).</li>
@@ -156,7 +156,7 @@ export default function SalesMarketingTabSections2() {
               </tr>
             </tbody>
           </table>
-          <div className="mt-2">Ambition: These forecasts are ambitious but achievable given the unmet need, Mely's innovative nature, and high growth rates in the digital health/AI in diagnostics sector.</div>
+          <div className="mt-2">Ambition: These forecasts are ambitious but achievable given the unmet need, Mely&apos;s innovative nature, and high growth rates in the digital health/AI in diagnostics sector.</div>
         </div>
       </section>
 

@@ -241,7 +241,7 @@ export default function ResourcesTab() {
             <li>Copyright: Automatically protects code.</li>
             <li>Trade Secrets: Strict protection (NDAs, secure practices).</li>
             <li>Soleau Envelope (INPI): Low-cost proof of prior art.</li>
-            <li>Trademarks: Register 'Mely' brand and products.</li>
+            <li>Trademarks: Register &apos;Mely&apos; brand and products.</li>
             <li>NDAs and rights assignments for all external creations.</li>
           </ul>
           <div className="text-gray-700 text-sm mt-2">In seed phase, IP value relies more on team than formal assessment. A solid IP strategy builds investor credibility.</div>
