@@ -19,7 +19,7 @@ export default function ResourcesTab() {
       {/* Section 1: Premises */}
       <Section title="Initial and Evolving Premises Strategy" icon={<FaBuilding className="text-indigo-500" />}>  
         <div className="mb-6 text-gray-700">
-          Mely&apos;s strategy for physical or virtual premises is designed to evolve with its growth, ensuring rigorous compliance with data security regulations. Rennes is a relevant focal point given the available offerings.
+          Mely&#39;s strategy for physical or virtual premises is designed to evolve with its growth, ensuring rigorous compliance with data security regulations. Rennes is a relevant focal point given the available offerings.
         </div>
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">Initial Phase Options</h3>
@@ -33,7 +33,7 @@ export default function ResourcesTab() {
           <h3 className="font-semibold text-lg mb-2">Strategic Timeline</h3>
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1 bg-gray-50 rounded-xl p-4 border-l-4 border-indigo-400 mb-2">
-              <div className="font-semibold mb-1">Years 1-2: Flexibility & Cost Control</div>
+              <div className="font-semibold mb-1">Years 1-2: Flexibility &amp; Cost Control</div>
               <ul className="list-disc list-inside ml-4 text-gray-700">
                 <li>Full Remote Work</li>
                 <li>Virtual Office</li>
@@ -44,7 +44,7 @@ export default function ResourcesTab() {
               <div className="font-semibold mb-1">Transition Triggers</div>
               <ul className="list-disc list-inside ml-4 text-gray-700">
                 <li>Team Growth (10-15+)</li>
-                <li>Specific R&D Needs</li>
+                <li>Specific R&amp;D Needs</li>
                 <li>Controlled Environment Need</li>
                 <li>Strengthen Company Culture</li>
               </ul>
@@ -53,7 +53,7 @@ export default function ResourcesTab() {
               <div className="font-semibold mb-1">Years 3-5: Dedicated Space</div>
               <ul className="list-disc list-inside ml-4 text-gray-700">
                 <li>Serviced Private Office</li>
-                <li>Traditional Lease & Fit-out</li>
+                <li>Traditional Lease &amp; Fit-out</li>
               </ul>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function ResourcesTab() {
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">Recommendations</h3>
           <div className="text-gray-700 mb-2">A hybrid approach is recommended for Years 1-2: full remote for most of the team, a virtual office in Rennes for the address, and occasional coworking meeting room rental. This allows adaptation to growth and cash flow, prioritizing product development and talent acquisition.</div>
-          <div className="text-gray-700">For Years 3-5, transition to a dedicated office as needed. Options include serviced private offices (e.g., Regus) or traditional lease & fit-out (Rennes rents ~€188/m²/year).</div>
+          <div className="text-gray-700">For Years 3-5, transition to a dedicated office as needed. Options include serviced private offices (e.g., Regus) or traditional lease &amp; fit-out (Rennes rents ~€188/m²/year).</div>
         </div>
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">Specific Needs and Compliance</h3>
@@ -209,7 +209,7 @@ export default function ResourcesTab() {
         <div className="mb-6">
           <h3 className="font-semibold text-lg mb-2">IT Infrastructure and Hardware</h3>
           <ul className="list-disc list-inside ml-4 text-gray-700 mb-2">
-            <li>Mely&apos;s data will be stored on secure servers in France, ensuring compliance with GDPR and HDS requirements.</li>
+            <li>Mely&#39;s data will be stored on secure servers in France, ensuring compliance with GDPR and HDS requirements.</li>
             <li>High-performance laptops for each team member (€1.5k-2k/unit).</li>
             <li>Tablets: 2-4 professional tablets for testing (€500-900/unit).</li>
             <li>VR Headsets: 2-3 enterprise-grade headsets (€580-700/unit).</li>

@@ -39,7 +39,7 @@ export default function SalesMarketingTabSections2() {
           </ul>
           <strong className="block mt-4">B2B2C Segment (Future Target):</strong>
           <ul className="list-disc list-inside text-left max-w-xl mx-auto mt-2">
-            <li>Approach envisioned for the longer term, Mely offered to patients via providers or insurers.</li>
+            <li>Approach envisioned for the longer term, Mely&apos;s platform is designed to be flexible and scalable, adapting to the evolving needs of healthcare providers and researchers.</li>
           </ul>
         </div>
       </section>

@@ -26,7 +26,7 @@ export default function CommunicationTab() {
   return (
     <div className="space-y-12">
       {/* Section 1: Communication Goals */}
-      <Section title="The 'Why': Foundation of Our Communication" icon={<FaLightbulb className="text-yellow-500" />}>  
+      <Section title="The Path Forward: Mely: Illuminating Brain Health. Communicating Innovation. Driving Change." icon={<FaLightbulb className="text-yellow-500" />}>  
         <TwoColumn
           left={
             <div>
@@ -290,7 +290,7 @@ export default function CommunicationTab() {
       {/* Section 4: Conclusion & Recommendations */}
       <Section title="Conclusion & Recommendations" icon={<FaChartLine className="text-indigo-500" />}>  
         <div className="mb-4 text-gray-700">
-          <p>&bull; <strong>Healthcare Professionals</strong>: &quot;Empowering your practice with AI-driven insights for better patient outcomes.&quot;</p>
+          <p>&bull; <strong>Action-Oriented</strong>: &quot;Start your journey to better healthcare today&quot;</p>
         </div>
         <ul className="list-disc list-inside ml-4 text-gray-700 text-sm mb-4">
           <li>Innovative Message: Cutting-edge approach with clear, tailored value propositions.</li>
@@ -299,7 +299,7 @@ export default function CommunicationTab() {
           <li>Data-Driven & Agile: Commitment to measuring impact and continuously optimizing.</li>
         </ul>
         <div className="mb-4 text-gray-700">
-          <strong>Measuring Impact & Agile Evolution:</strong> Our strategy is dynamic. We will continuously monitor performance, learn from data, and adapt our digital communication to maximize impact and achieve Mely's objectives.
+          <strong>Measuring Impact &amp; Agile Evolution:</strong> Our strategy is dynamic. We will continuously monitor performance, learn from data, and adapt our digital communication to maximize impact and achieve Mely's objectives.
         </div>
         <div className="mb-4 text-gray-700">
           <p>&bull; <strong>Patients &amp; Caregivers</strong>: &quot;Your health, simplified. Personalized care at your fingertips.&quot;</p>
