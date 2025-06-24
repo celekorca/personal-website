@@ -4,6 +4,7 @@ import { useState } from 'react';
 import OverviewTab from './components/tabs/OverviewTab';
 import ProjectTab from './components/tabs/ProjectTab';
 import PlaceholderTab from './components/tabs/PlaceholderTab';
+import MarketTab from './components/tabs/MarketTab';
 import SalesMarketingTab from './components/tabs/SalesMarketingTab';
 import CommunicationTab from './components/tabs/CommunicationTab';
 import ResourcesTab from './components/tabs/ResourcesTab';
@@ -11,10 +12,11 @@ import ResourcesTab from './components/tabs/ResourcesTab';
 const tabs = [
   { id: 'overview', label: 'Overview', component: <OverviewTab /> },
   { id: 'project', label: 'Project', component: <ProjectTab /> },
-  { id: 'market-study', label: 'Market', component: <PlaceholderTab tabName="Market" /> },
+  { id: 'market-study', label: 'Market', component: <MarketTab /> },
   { id: 'sales-marketing', label: 'Sales & Marketing', component: <SalesMarketingTab /> },
   { id: 'communication', label: 'Communication', component: <CommunicationTab /> },
   { id: 'resources', label: 'Resources', component: <ResourcesTab /> },
+  { id: 'partners', label: 'Partners', component: <PlaceholderTab tabName="Partners" /> },
   { id: 'administration', label: 'Administration', component: <PlaceholderTab tabName="Administration" /> },
   { id: 'finance', label: 'Finance', component: <PlaceholderTab tabName="Finance" /> },
   { id: 'perspectives', label: 'In 3 Years', component: <PlaceholderTab tabName="3-Year Perspective" /> },
