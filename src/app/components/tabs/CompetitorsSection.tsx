@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Card from '../../components/Card';
 import TableComponent from '../../components/TableComponent';
 import { TableColumn, SortConfig, TableData } from '../../../types';
-import { LightBulbIcon } from '../../components/Icon';
+
 
 interface CompetitorMappingDataItem extends TableData {
   name: string;
@@ -457,7 +457,7 @@ const CompetitorsSection: React.FC = () => {
           <p>
             The digital diagnostics market for neurodegenerative diseases is dynamic and innovative. Key players 
             leverage AI/ML, wearables, AR/VR, eye-tracking, and voice/speech biomarkers (p.69-72). Trends include 
-            integration into remote clinical trials, "Digital Biomarker-as-a-Service" (DBaaS), co-development with 
+            integration into remote clinical trials, &quot;Digital Biomarker-as-a-Service&quot; (DBaaS), co-development with 
             pharma, and a focus on explainable AI (XAI) (p.105).
           </p>
           <p>

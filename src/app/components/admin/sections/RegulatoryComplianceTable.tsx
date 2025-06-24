@@ -102,7 +102,7 @@ export default function RegulatoryComplianceTable() {
                     6. Develop Clinical Evaluation Plan (CEP)
                   </td>
                   <td className="px-2 py-1 whitespace-normal">
-                    <strong>Clinical Evidence Strategy:</strong> How to demonstrate the AI's diagnostic accuracy against current gold standards for target neurodegenerative diseases. <br />
+                    <strong>Clinical Evidence Strategy:</strong> How to demonstrate the AI&apos;s diagnostic accuracy against current gold standards for target neurodegenerative diseases. <br />
                     <strong>State-of-the-Art:</strong> Define current diagnostic pathways. <br />
                     <strong>Benefit-Risk Analysis:</strong> Quantify benefits (e.g., early detection, accessibility) vs. risks (misdiagnosis). <br />
                     <strong>PMCF Plan:</strong> Outline how real-world performance and AI algorithm integrity will be monitored.
@@ -133,7 +133,7 @@ export default function RegulatoryComplianceTable() {
                   </td>
                   <td className="px-2 py-1 whitespace-normal">
                     <strong>Analytical Validation:</strong> Verify the app accurately collects and processes cognitive/motor data. <br />
-                    <strong>Algorithm Validation (Technical):</strong> Assess AI model's standalone performance (e.g., accuracy, precision, recall). <br />
+                    <strong>Algorithm Validation (Technical):</strong> Assess AI model&apos;s standalone performance (e.g., accuracy, precision, recall). <br />
                     <strong>Clinical Validation:</strong> Conduct clinical investigation(s) to demonstrate diagnostic performance (sensitivity, specificity, PPV, NPV) in the intended patient population against clinical gold standards. <br />
                     <strong>AI Act:</strong> Ensure training, validation, and testing datasets are high quality, relevant, and representative to mitigate bias.
                   </td>

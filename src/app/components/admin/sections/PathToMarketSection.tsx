@@ -32,11 +32,11 @@ export default function PathToMarketSection() {
     pd: {
       title: "PD (Parkinson&apos;s Disease)",
       focus: "Early diagnosis and objective monitoring of motor (tremor, bradykinesia, gait) and non-motor (voice, facial expression) symptoms.",
-      comparator: "Neurologist assessment, Unified Parkinson's Disease Rating Scale (UPDRS), MDS-UPDRS, and Hoehn & Yahr staging.",
+      comparator: "Neurologist assessment, Unified Parkinson&apos;s Disease Rating Scale (UPDRS), MDS-UPDRS, and Hoehn & Yahr staging.",
       population: "Early-stage PD patients, at-risk populations (e.g., REM sleep behavior disorder), and healthy controls. Age-matched controls for comparison.",
       endpoints: "Diagnostic accuracy (sensitivity/specificity), correlation with UPDRS-III motor scores, detection of symptom fluctuations, and response to dopaminergic therapy.",
       technology: "Wearable sensors for motor assessment, voice analysis for dysarthria and hypophonia, video-based facial expression analysis for hypomimia, and digital spiral drawing analysis for tremor and bradykinesia.",
-      reference: "MDS Research Criteria for Prodromal Parkinson's Disease highlight the need for objective digital biomarkers in early detection.",
+      reference: "MDS Research Criteria for Prodromal Parkinson&apos;s Disease highlight the need for objective digital biomarkers in early detection.",
       userFriendliness: "Simple voice recording tasks, guided motor exercises, and automated analysis requiring minimal technical expertise from users."
     },
     ad: {
@@ -786,7 +786,7 @@ Best-Case Scenario: Mely establishes strong collaborations with leading KOLs and
                         <p className="font-semibold">Core GDPR Principles:</p>
                         <ol className="list-decimal pl-5 space-y-1">
                           <li><span className="font-medium">Lawfulness, Fairness, and Transparency:</span> Processing must have a lawful basis (e.g., explicit consent for research, necessity for medical diagnosis under professional responsibility). Patients must be clearly informed about how their data is used, the AI decision-making process, and their rights.</li>
-                          <li><span className="font-medium">Purpose Limitation:</span> Data collected for specific, explicit, and legitimate purposes (e.g., diagnosing Parkinson's) should not be further processed in a manner incompatible with those purposes.</li>
+                          <li><span className="font-medium">Purpose Limitation:</span> Data collected for specific, explicit, and legitimate purposes (e.g., diagnosing Parkinson&apos;s) should not be further processed in a manner incompatible with those purposes.</li>
                           <li><span className="font-medium">Data Minimization:</span> Collect only the data necessary for the intended purpose.</li>
                           <li><span className="font-medium">Accuracy:</span> Ensure personal data is accurate and kept up to date.</li>
                           <li><span className="font-medium">Storage Limitation:</span> Keep data in an identifiable form only for as long as necessary.</li>
@@ -794,7 +794,7 @@ Best-Case Scenario: Mely establishes strong collaborations with leading KOLs and
                           <li><span className="font-medium">Accountability:</span> Mely must be able to demonstrate compliance with GDPR principles. This includes maintaining records of processing activities (RoPA) and conducting Data Protection Impact Assessments (DPIAs) for high-risk processing.</li>
                         </ol>
 
-                        <p><span className="font-semibold">Data Subject Rights:</span> Mely must have procedures to facilitate patients' rights to access, rectify, erase, restrict processing, data portability, and object to processing, including automated decision-making. The "right to explanation" for automated decisions is particularly relevant for AI.</p>
+                        <p><span className="font-semibold">Data Subject Rights:</span> Mely must have procedures to facilitate patients&apos; rights to access, rectify, erase, restrict processing, data portability, and object to processing, including automated decision-making. The &quot;right to explanation&quot; for automated decisions is particularly relevant for AI.</p>
 
                         <p><span className="font-semibold">Consent:</span> For processing health data for research or AI training where other lawful bases may not fully apply, explicit and informed consent is crucial. Consent mechanisms must be transparent, and withdrawal must be easy. Traditional consent frameworks may be inadequate for complex AI data uses.</p>
 
@@ -860,7 +860,7 @@ Best-Case Scenario: Mely establishes strong collaborations with leading KOLs and
                         <p>The certification covers activities like data storage, backup, restoration, and ensuring accessibility.</p>
 
                         <p className="font-semibold">Process:</p>
-                        <p>While the detailed process isn't fully outlined in the provided material, it involves choosing an HDS-certified hosting provider or, if Mely were to host data itself (less likely for a startup), undergoing a rigorous certification audit by an accredited body. The certification is granted and monitored by French regulatory bodies.</p>
+<p>While the detailed process isn&apos;t fully outlined in the provided material, it involves choosing an HDS-certified hosting provider or, if Mely were to host data itself (less likely for a startup), undergoing a rigorous certification audit by an accredited body. The certification is granted and monitored by French regulatory bodies.</p>
 
                         <p className="font-semibold">Our Approach:</p>
                         <p>The most practical approach for Mely will be to use a major cloud provider (AWS, Azure, GCP) that already holds HDS certification for their French data centers and relevant services. Mely would then be responsible for configuring its application and processes on top of the certified infrastructure in a compliant manner.</p>

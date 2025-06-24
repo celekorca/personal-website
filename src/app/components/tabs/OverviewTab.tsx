@@ -1,6 +1,6 @@
-import { FaTabletAlt, FaDna, FaDatabase, FaLightbulb, FaCrosshairs, FaExclamationTriangle, FaUsers, FaChartLine, FaDollarSign, FaKey, FaUnlockAlt, FaCogs, FaClipboardList, FaChartBar, FaTools, FaClipboardCheck } from 'react-icons/fa';
-import { GiBrain, GiSandsOfTime } from 'react-icons/gi';
-import { MdOutlineSpeed, MdOutlineTrendingUp, MdOutlineAnalytics } from 'react-icons/md';
+import { FaTabletAlt, FaDna, FaDatabase, FaLightbulb, FaCrosshairs, FaExclamationTriangle, FaClipboardList } from 'react-icons/fa';
+import { GiBrain } from 'react-icons/gi';
+
 import InfoTooltip from './InfoTooltip';
 import ProcessStep from './ProcessStep';
 import ArrowIcon from './ArrowIcon';
