@@ -39,10 +39,10 @@ const CompetitorsSection: React.FC = () => {
     { header: "Products/Services Offered", accessor: "productsServices" },
     { header: "Pricing", accessor: "pricing" },
     { header: "Other Information", accessor: "otherInfo" },
-    { header: "Qualitative Information", accessor: "qualitativeInfo" },
+    { header: "Qualitative Information", accessor: "qualitativeInfo" }
   ];
 
-  const competitorMappingData: CompetitorMappingDataItem[] = [
+  const competitorMappingData: CompetitorMappingDataItem[] = useMemo(() => [
     {
       name: 'ClearSky Medical Diagnostics',
       creationDate: '2013 [35, 36]',
@@ -362,7 +362,7 @@ const CompetitorsSection: React.FC = () => {
       otherInfo: 'Samsung investment (2025); MHRA UK certification for PrecivityAD2 (2025); multiple publications validating tests [191, 195, 196]',
       qualitativeInfo: 'Highly accurate blood tests for AD, improving clinical decision-making; strong scientific validation [197, 198]'
     }
-  ];
+  ], []);
 
   const handleSortRequestMain = (key: string) => {
     let direction: 'ascending' | 'descending' = 'ascending';

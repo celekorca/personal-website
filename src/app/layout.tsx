@@ -1,6 +1,7 @@
 // Root layout for Next.js App Router
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import Link from 'next/link';
 import Logo from '@/components/Logo';
 import './globals.css';
 
@@ -25,8 +26,8 @@ export default function RootLayout({
               <h1 className="text-2xl font-semibold text-gray-900">Business Plan</h1>
             </div>
             <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
-              <a href="/" className="text-gray-700 hover:text-indigo-600">Home</a>
-              <a href="/admin" className="text-gray-700 hover:text-indigo-600">Operational strategy</a>
+              <Link href="/" className="text-gray-700 hover:text-indigo-600">Home</Link>
+              <Link href="/admin" className="text-gray-700 hover:text-indigo-600">Operational strategy</Link>
             </nav>
           </div>
         </header>

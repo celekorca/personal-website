@@ -5,9 +5,6 @@ import { useState } from 'react';
 export default function PathToMarketSection() {
   const [hoveredScenario, setHoveredScenario] = useState<{ type: 'best' | 'worst', id: string } | null>(null);
 
-  type ScenarioType = 'best' | 'worst';
-  type ScenarioId = string; // Allow for different scenario IDs
-
   // Helper function to handle tooltip hover
   const handleTooltipHover = (type: 'best' | 'worst', id: string) => {
     setHoveredScenario({ type, id });
@@ -16,7 +13,6 @@ export default function PathToMarketSection() {
   const handleTooltipLeave = () => {
     setHoveredScenario(null);
   };
-
 
   const [activeTab, setActiveTab] = useState('clinical');
   const [activeCondition, setActiveCondition] = useState('pd');
@@ -346,7 +342,7 @@ export default function PathToMarketSection() {
                         </span>
                         {hoveredScenario?.type === 'best' && hoveredScenario.id === 'partnerships' && (
                           <div className="absolute z-10 right-0 w-64 p-2 text-xs text-gray-600 bg-white border border-gray-200 rounded shadow-lg">
-                            Best-Case Scenario: Mely establishes strong collaborations with leading KOLs and institutions in France and other EU countries for each target condition. Access to high-quality patient data and expertise accelerates clinical validation and enhances the platform's credibility. Joint publications in high-impact journals.
+Best-Case Scenario: Mely establishes strong collaborations with leading KOLs and institutions in France and other EU countries for each target condition. Access to high-quality patient data and expertise accelerates clinical validation and enhances the platform&apos;s credibility. Joint publications in high-impact journals.
                           </div>
                         )}
                       </div>
@@ -619,7 +615,7 @@ export default function PathToMarketSection() {
 
               {/* Reimbursement Section */}
               <div className="space-y-4 pt-4 border-t border-gray-200">
-                <p className="text-sm italic text-black bg-gray-100 p-4 rounded-md">France has relatively developed reimbursement pathways for digital health technologies. The French government's Plan France 2030 has committed €718.4 million to accelerate digital health adoption, creating a supportive ecosystem for Mely. Careful planning for evidence generation and certification processes will be done from the very start. Up to 72% of digital health startups face challenges with regulatory approval timelines.</p>
+                <p className="text-sm italic text-black bg-gray-100 p-4 rounded-md">France has relatively developed reimbursement pathways for digital health technologies. The French government&apos;s Plan France 2030 has committed €718.4 million to accelerate digital health adoption, creating a supportive ecosystem for Mely. Careful planning for evidence generation and certification processes will be done from the very start. Up to 72% of digital health startups face challenges with regulatory approval timelines.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* Key Regulatory Bodies */}

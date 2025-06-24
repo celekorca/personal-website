@@ -90,7 +90,7 @@ export default function EHRIntegrationSection() {
                     <h5 className="text-sm font-medium text-green-800">Best-Case Scenario</h5>
                   </div>
                   <p className="mt-1 text-xs text-green-700">
-                    Mely's platform integrates seamlessly with major EHR systems used in target European hospitals via FHIR APIs. Clinicians can easily access Mely's insights within their existing workflows, leading to high adoption.
+                    Mely&apos;s platform integrates seamlessly with major EHR systems used in target European hospitals via FHIR APIs. Clinicians can easily access Mely&apos;s insights within their existing workflows, leading to high adoption.
                   </p>
                 </div>
                 

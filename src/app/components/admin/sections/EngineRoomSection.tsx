@@ -106,7 +106,7 @@ export default function EngineRoomSection() {
       <header className="text-center max-w-4xl mx-auto mb-6">
         <h1 className="text-2xl font-semibold text-gray-800">The Engine Room</h1>
         <p className="text-sm text-gray-600 mt-2">
-          Core organizational and financial strategies powering Mely's growth, from talent acquisition to funding.
+          Core organizational and financial strategies powering Mely&apos;s growth, from talent acquisition to funding.
         </p>
       </header>
 

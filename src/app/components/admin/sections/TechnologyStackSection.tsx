@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function TechnologyStackSection() {
-  const [hoveredScenario, setHoveredScenario] = useState<{type: 'best' | 'worst', section: string} | null>(null);
+  // Removed unused state variables
 
   return (
     <section id="technology-stack" className="py-8">
@@ -11,7 +11,7 @@ export default function TechnologyStackSection() {
         <header className="text-center mb-6">
           <h2 className="text-2xl font-semibold text-gray-800">Technology Stack</h2>
           <p className="text-sm text-gray-600 mt-2">
-            Overview of the technologies powering Mely's platform
+            Overview of the technologies powering Mely&apos;s platform
           </p>
         </header>
 

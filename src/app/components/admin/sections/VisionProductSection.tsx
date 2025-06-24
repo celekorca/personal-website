@@ -12,7 +12,7 @@ export default function VisionProductSection() {
         <header className="text-center mb-6">
           <h2 className="text-2xl font-semibold text-gray-800">Product Development</h2>
           <p className="text-sm text-gray-600 mt-2">
-            Development lifecycle and technology stack powering Mely's diagnostic platform
+            Development lifecycle and technology stack powering Mely&apos;s diagnostic platform
           </p>
         </header>
         
@@ -26,7 +26,7 @@ export default function VisionProductSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="ml-4 text-lg font-medium text-gray-900">AI Development Lifecycle for Mely's Diagnostic Tool</h3>
+                <h3 className="ml-4 text-lg font-medium text-gray-900">AI Development Lifecycle for Mely&apos;s Diagnostic Tool</h3>
               </div>
               <div className="mt-4">
                 <AIDevelopmentLifecycle />

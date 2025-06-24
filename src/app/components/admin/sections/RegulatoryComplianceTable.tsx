@@ -33,7 +33,7 @@ export default function RegulatoryComplianceTable() {
                     1. Define Intended Purpose & Classify Device
                   </td>
                   <td className="px-2 py-1 whitespace-normal">
-                    <strong>Intended Purpose:</strong> Clearly define: "Software using AI to analyze cognitive and motor data collected via a mobile app to aid in the diagnosis of specific neurodegenerative diseases (e.g., Alzheimer's, Parkinson's)." <br />
+                    <strong>Intended Purpose:</strong> Clearly define: &quot;Software using AI to analyze cognitive and motor data collected via a mobile app to aid in the diagnosis of specific neurodegenerative diseases (e.g., Alzheimer&apos;s, Parkinson&apos;s).&quot; <br />
                     <strong>Classification:</strong> Confirmed Class IIb via MDR Rule 11 (diagnostic software with potential for serious deterioration). <br />
                     <strong>SaMD:</strong> Yes. <br />
                     <strong>High-Risk AI:</strong> Yes, under EU AI Act due to diagnostic nature and potential impact.

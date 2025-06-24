@@ -67,7 +67,7 @@ export default function FiveYearJourneySection() {
               <div className="absolute w-4 h-4 bg-cyan-500 rounded-full -left-2"></div>
               <h4 className="font-bold text-cyan-700 text-lg">Year 1-2: Foundation</h4>
               <p className="text-sm mt-1">
-                Secure Seed funding, build core team, develop Parkinson's MVP, initiate PD validation trial, and draft 
+                Secure Seed funding, build core team, develop Parkinson&apos;s MVP, initiate PD validation trial, and draft 
                 initial QMS/regulatory documentation.
               </p>
             </li>
