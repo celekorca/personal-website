@@ -1,4 +1,3 @@
-// Next.js Not Found (404) for /admin route (App Router expects not-found.tsx in the route root)
 'use client';
 
 import React from 'react';
@@ -6,14 +5,15 @@ import Link from 'next/link';
 
 export default function AdminNotFound() {
   return (
-    <html>
-      <body>
-        <div style={{ padding: '2rem', textAlign: 'center' }}>
-          <h2>404 - Admin Page Not Found</h2>
-          <p>The admin page you&apos;re looking for does not exist or has been moved.</p>
-          <Link href="/admin" style={{ color: '#6366f1', fontWeight: 'bold', marginTop: 20, display: 'inline-block' }}>Go to Admin Home</Link>
-        </div>
-      </body>
-    </html>
+    <div className="min-h-screen flex flex-col items-center justify-center p-8 text-center">
+      <h2 className="text-2xl font-bold mb-4">404 - Admin Page Not Found</h2>
+      <p className="mb-6">The admin page you&apos;re looking for does not exist or has been moved.</p>
+      <Link 
+        href="/admin" 
+        className="px-6 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors"
+      >
+        Go to Admin Home
+      </Link>
+    </div>
   );
 }

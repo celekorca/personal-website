@@ -42,7 +42,7 @@ const CompetitorsSection: React.FC = () => {
     { header: "Qualitative Information", accessor: "qualitativeInfo" }
   ];
 
-  const competitorMappingData = [
+  const competitorMappingData: CompetitorMappingDataItem[] = [
     {
       name: 'ClearSky Medical Diagnostics',
       creationDate: '2013 [35, 36]',
@@ -97,7 +97,8 @@ const CompetitorsSection: React.FC = () => {
       pricing: 'SaaS for pharma & clinical trials [1, 14, 58]',
       otherInfo: 'Funding >$30.5M USD (Series A $25M 2022); clinical partnerships [1, 57, 59]',
       qualitativeInfo: 'Aims to transform CNS clinical dev, diagnosis; "Digital Biomarker-as-a-Service" [1, 57]'
-    },
+    }
+    ,
     {
       name: 'Altoida',
       creationDate: '2016 [61]; 2013 [60][65]',
@@ -174,28 +175,6 @@ const CompetitorsSection: React.FC = () => {
       pricing: 'Not public (reimbursable neurodiagnostics) [24, 91]',
       otherInfo: 'Funding $7.95M USD (strategic investment Topcon 2025); spin-off Bern University Hospital [23, 90, 91]',
       qualitativeInfo: 'Aims for accessible, scalable, data-driven neurodiagnostics; collab. Topcon [24, 91]'
-    },
-    {
-      name: 'Koneksa Health',
-      creationDate: '2013 [92]',
-      location: 'New York, NY, USA [93]',
-      headcount: '~100 [94]',
-      revenue: 'Not available (Series B $16M 2020 [95])',
-      productsServices: 'Digital biomarker platform for clinical trials (neuroscience, PD); remote data collection via wearables, sensors [29, 30, 96]',
-      pricing: 'SaaS model for biopharma sponsors [97]',
-      otherInfo: 'Partnerships with Michael J. Fox Foundation, Sanofi, Aural Analytics [98, 99]',
-      qualitativeInfo: 'Leader in developing and deploying digital biomarkers; rigorous scientific approach [29, 30]'
-    },
-    {
-      name: 'Linus Health',
-      creationDate: '2019 (acquired DCT in 2020 [100])',
-      location: 'Boston, MA, USA / Dublin, Ireland [101]',
-      headcount: '51-200 [102]',
-      revenue: 'Not available (Series B $55M USD [100])',
-      productsServices: 'Digital brain health platform (DCTclock™, DCR™) using AI on clock drawing & word recall for early cognitive impairment [7, 31]',
-      pricing: 'Fee-for-product/service model [103]',
-      otherInfo: 'Partnerships with Davos Alzheimer\'s Collaborative, Neurogen Biomarking (2025); multiple acquisitions [7, 104, 105]',
-      qualitativeInfo: 'TIME Best Invention 2021 for DCTclock; numerous articles validating tech [7, 100, 104]'
     },
     {
       name: 'PKG Health (Global Kinetics Corp)',
@@ -438,7 +417,7 @@ const CompetitorsSection: React.FC = () => {
     }
   ];
 
-  const sortedSummaryRDKPData = useMemo(() => sortData(summaryRDKPData, sortConfigSummary), [summaryRDKPData, sortConfigSummary]);
+  const sortedSummaryRDKPData = useMemo(() => sortData(summaryRDKPData, sortConfigSummary), [summaryRDKPData, sortConfigSummary]); // summaryRDKPData is now memoized
 
 
   const summaryRDKPColumns: TableColumn[] = [

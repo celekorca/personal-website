@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useId } from 'react';
 import { FaInfoCircle } from 'react-icons/fa';
 
 interface InfoTooltipProps {
@@ -12,7 +12,7 @@ export default function InfoTooltip({ content, children }: InfoTooltipProps) {
   const [isVisible, setIsVisible] = useState(false);
   const tooltipRef = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLDivElement>(null);
-  const tooltipId = `tooltip-${Math.random().toString(36).substr(2, 9)}`;
+  const tooltipId = `tooltip-${useId().replace(/:/g, '')}`;
 
   // Close tooltip when clicking outside
   useEffect(() => {
