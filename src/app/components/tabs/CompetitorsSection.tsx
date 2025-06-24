@@ -30,8 +30,13 @@ const CompetitorsSection: React.FC = () => {
   const [sortConfigMain, setSortConfigMain] = useState<SortConfig | null>(null);
   const [sortConfigSummary, setSortConfigSummary] = useState<SortConfig | null>(null);
 
-  const competitorMappingColumns: TableColumn[] = [
-    { header: "Competitor Name", accessor: "name", render: (item) => <span className="font-semibold text-sky-700">{(item as CompetitorMappingDataItem).name}</span>, sortable: true },
+  const competitorMappingColumns = useMemo((): TableColumn[] => [
+    { 
+      header: "Competitor Name", 
+      accessor: "name", 
+      render: (item) => <span className="font-semibold text-sky-700">{(item as CompetitorMappingDataItem).name}</span>, 
+      sortable: true 
+    },
     { header: "Date of Creation", accessor: "creationDate", sortable: true },
     { header: "Location", accessor: "location", sortable: true },
     { header: "Headcount", accessor: "headcount", sortable: true },
@@ -40,9 +45,9 @@ const CompetitorsSection: React.FC = () => {
     { header: "Pricing", accessor: "pricing" },
     { header: "Other Information", accessor: "otherInfo" },
     { header: "Qualitative Information", accessor: "qualitativeInfo" }
-  ];
+  ], []);
 
-  const competitorMappingData: CompetitorMappingDataItem[] = [
+  const competitorMappingData = useMemo((): CompetitorMappingDataItem[] => [
     {
       name: 'ClearSky Medical Diagnostics',
       creationDate: '2013 [35, 36]',
@@ -341,7 +346,7 @@ const CompetitorsSection: React.FC = () => {
       otherInfo: 'Samsung investment (2025); MHRA UK certification for PrecivityAD2 (2025); multiple publications validating tests [191, 195, 196]',
       qualitativeInfo: 'Highly accurate blood tests for AD, improving clinical decision-making; strong scientific validation [197, 198]'
     }
-  ];
+  ], []);
 
   const handleSortRequestMain = (key: string) => {
     let direction: 'ascending' | 'descending' = 'ascending';
@@ -379,7 +384,7 @@ const CompetitorsSection: React.FC = () => {
 
   const sortedCompetitorMappingData = useMemo(() => sortData(competitorMappingData, sortConfigMain), [competitorMappingData, sortConfigMain]);
 
-  const summaryRDKPData: SummaryRDKPDataItem[] = [
+  const summaryRDKPData = useMemo((): SummaryRDKPDataItem[] => [
     {
       company: 'ClearSky Medical Diagnostics',
       funding: 'N/A',
@@ -415,18 +420,21 @@ const CompetitorsSection: React.FC = () => {
       trials: 'Multiple clinical partnerships',
       modelFocus: 'SaaS; Pharma Focus; Clinical Trials'
     }
-  ];
+  ], []);
 
-  const sortedSummaryRDKPData = useMemo(() => sortData(summaryRDKPData, sortConfigSummary), [summaryRDKPData, sortConfigSummary]); // summaryRDKPData is now memoized
+  const sortedSummaryRDKPData = useMemo(
+    () => sortData(summaryRDKPData, sortConfigSummary), 
+    [summaryRDKPData, sortConfigSummary]
+  );
 
 
-  const summaryRDKPColumns: TableColumn[] = [
+  const summaryRDKPColumns: TableColumn[] = useMemo(() => [
     { header: "Company", accessor: "company", render: (item) => <span className="font-semibold text-sky-700">{(item as SummaryRDKPDataItem).company}</span>, sortable: true },
     { header: "Funding", accessor: "funding", sortable: true },
     { header: "FDA / CE Mark Status", accessor: "status", sortable: true },
-    { header: "Notable Trials & Studies", accessor: "trials" , sortable: true},
+    { header: "Notable Trials & Studies", accessor: "trials", sortable: true },
     { header: "Business Model / Market Focus", accessor: "modelFocus", sortable: true },
-  ];
+  ], []);
 
 
   return (
