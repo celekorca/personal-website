@@ -30,7 +30,7 @@ export default function PathToMarketSection() {
 
   const conditionData: Record<string, ConditionData> = {
     pd: {
-      title: "PD (Parkinson's Disease)",
+      title: "PD (Parkinson&apos;s Disease)",
       focus: "Early diagnosis and objective monitoring of motor (tremor, bradykinesia, gait) and non-motor (voice, facial expression) symptoms.",
       comparator: "Neurologist assessment, Unified Parkinson's Disease Rating Scale (UPDRS), MDS-UPDRS, and Hoehn & Yahr staging.",
       population: "Early-stage PD patients, at-risk populations (e.g., REM sleep behavior disorder), and healthy controls. Age-matched controls for comparison.",
@@ -40,7 +40,7 @@ export default function PathToMarketSection() {
       userFriendliness: "Simple voice recording tasks, guided motor exercises, and automated analysis requiring minimal technical expertise from users."
     },
     ad: {
-      title: "AD (Alzheimer's Disease)",
+      title: "AD (Alzheimer&apos;s Disease)",
       focus: "Early detection of subtle cognitive decline through speech patterns, language use, and cognitive function assessment.",
       comparator: "Standard neuropsychological tests (MMSE, MoCA), CSF biomarkers (Aβ42, p-tau), and amyloid PET imaging.",
       population: "Cognitively normal elderly, mild cognitive impairment (MCI) patients, and early AD patients. APOE4 carriers for high-risk stratification.",

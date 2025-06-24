@@ -7,12 +7,11 @@ import FiveYearJourneySection from '@/app/components/admin/sections/FiveYearJour
 import RegulatoryComplianceTable from '@/app/components/admin/sections/RegulatoryComplianceTable';
 
 export default function AdminDashboard() {
-  // Removed unused state and scroll function
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800">
 
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-2 py-1">
         <VisionProductSection />
         <PathToMarketSection />
         <RegulatoryComplianceTable />

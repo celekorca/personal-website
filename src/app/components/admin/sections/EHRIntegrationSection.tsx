@@ -44,6 +44,7 @@ export default function EHRIntegrationSection() {
                   <ul className="list-disc pl-5 space-y-1 text-sm text-blue-700">
                     <li>Retrieve patient demographic and clinical data from EHR</li>
                     <li>Securely transmit diagnostic reports and biomarker data back to EHR</li>
+                    <li>Must meet stringent requirements for durability, disinfection, and regulatory compliance. Key features include antimicrobial coatings, drop resistance, and medical device certification.</li>
                   </ul>
                 </div>
               </div>

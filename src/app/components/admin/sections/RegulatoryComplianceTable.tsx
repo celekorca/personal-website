@@ -177,7 +177,7 @@ export default function RegulatoryComplianceTable() {
                     11. Obtain CE Certificate & Declare Conformity
                   </td>
                   <td className="px-2 py-1 whitespace-normal">
-                    <strong>CE Marking:</strong> Applied to software (e.g., "About" screen, website). <br />
+                    <strong>CE Marking:</strong> Applied to software (e.g., &quot;About&quot; screen, website). <br />
                     <strong>Declaration of Conformity (DoC):</strong> Manufacturer signs. <br />
                     <strong>SRN & UDI:</strong> Register in EUDAMED. Assign Basic UDI-DI for the SaMD product line and UDI-DIs for specific versions/releases.
                   </td>

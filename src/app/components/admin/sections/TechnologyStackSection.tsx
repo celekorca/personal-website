@@ -233,7 +233,7 @@ export default function TechnologyStackSection() {
                 </div>
               </div>
               <div className="relative group ml-2">
-                <span className="text-red-500 cursor-help">⚠️</span>
+                <span className="text-red-500 cursor-help">&quot;&quot;</span>
                 <div className="invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute bottom-full right-0 mb-2 px-3 py-2 text-sm text-white bg-gray-900 rounded whitespace-normal w-64">
                   <div className="font-semibold mb-1">Worst-Case Scenario</div>
                   <div className="text-gray-200 text-xs">

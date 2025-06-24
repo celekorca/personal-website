@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import Card from '../../components/Card';
 import TableComponent from '../../components/TableComponent';
 import { TableColumn, SortConfig, TableData } from '../../../types';
-import { UsersIcon, LightBulbIcon } from '../../components/Icon';
+import { LightBulbIcon } from '../../components/Icon';
 
 interface CompetitorMappingDataItem extends TableData {
   name: string;
@@ -42,7 +42,7 @@ const CompetitorsSection: React.FC = () => {
     { header: "Qualitative Information", accessor: "qualitativeInfo" }
   ];
 
-  const competitorMappingData: CompetitorMappingDataItem[] = useMemo(() => [
+  const competitorMappingData = [
     {
       name: 'ClearSky Medical Diagnostics',
       creationDate: '2013 [35, 36]',
@@ -362,7 +362,7 @@ const CompetitorsSection: React.FC = () => {
       otherInfo: 'Samsung investment (2025); MHRA UK certification for PrecivityAD2 (2025); multiple publications validating tests [191, 195, 196]',
       qualitativeInfo: 'Highly accurate blood tests for AD, improving clinical decision-making; strong scientific validation [197, 198]'
     }
-  ], []);
+  ];
 
   const handleSortRequestMain = (key: string) => {
     let direction: 'ascending' | 'descending' = 'ascending';
@@ -399,48 +399,6 @@ const CompetitorsSection: React.FC = () => {
 
 
   const sortedCompetitorMappingData = useMemo(() => sortData(competitorMappingData, sortConfigMain), [competitorMappingData, sortConfigMain]);
-
-  const parseFunding = (otherInfo: string, revenue: string): string => {
-    const fundingRegex = /(\$?\d+(\.\d+)?[MK]? USD|\$\d+M Series [A-Z])/i;
-    let match = otherInfo.match(fundingRegex);
-    if (match) return match[0];
-    match = revenue.match(fundingRegex); // Check revenue if it contains funding info like in Cognitvity
-    if (match) return match[0];
-    if (otherInfo.toLowerCase().includes("funding")) return "Details in 'Other Info'";
-    return "N/A";
-  };
-
-  const parseStatus = (otherInfo: string, productsServices: string): string => {
-    const keywords = ["FDA", "CE Mark", "510(k)", "Pre-FDA", "Breakthrough Designation", "Approved", "Cleared", "Registered"];
-    const combinedText = (otherInfo + " " + productsServices).toLowerCase();
-    const found = keywords.filter(kw => combinedText.includes(kw.toLowerCase()));
-    return found.length > 0 ? found.join(', ') : "N/A";
-  };
-
-  const parseTrials = (otherInfo: string): string => {
-    const keywords = ["study", "studies", "trial", "trials", "collaboration", "partnership", "Bio-Hermes", "CALMA"];
-    if (keywords.some(kw => otherInfo.toLowerCase().includes(kw.toLowerCase()))) {
-        return "Details in 'Other Info' or public announcements";
-    }
-    return "N/A";
-  };
-
-  const parseModelFocus = useMemo(() => (productsServices: string, pricing: string): string => {
-    const focus: string[] = [];
-    const productsLower = productsServices.toLowerCase();
-    const pricingLower = pricing.toLowerCase();
-    
-    if (productsLower.includes("saas") || pricingLower.includes("saas")) focus.push("SaaS");
-    if (productsLower.includes("pharma") || pricingLower.includes("pharma")) focus.push("Pharma Focus");
-    if (productsLower.includes("clinical trials") || pricingLower.includes("clinical trials")) focus.push("Clinical Trials");
-    if (productsLower.includes("device") || pricingLower.includes("hardware")) focus.push("Device/Hardware Sales");
-    if (productsLower.includes("pdt") || pricingLower.includes("pdt")) focus.push("PDT Model");
-    if (productsLower.includes("b2b") || pricingLower.includes("b2b")) focus.push("B2B");
-    if (productsLower.includes("alzheimer") || productsLower.includes("ad")) focus.push("AD Focus");
-    if (productsLower.includes("parkinson") || productsLower.includes("pd")) focus.push("PD Focus");
-
-    return focus.length > 0 ? focus.slice(0, 3).join('; ') : (productsServices.substring(0, 50) + "...");
-  }, []); // Empty dependency array as the function doesn't depend on any external values
 
   const summaryRDKPData: SummaryRDKPDataItem[] = [
     {
@@ -494,7 +452,7 @@ const CompetitorsSection: React.FC = () => {
 
   return (
     <section id="competitors" className="space-y-12">
-      <Card title="Competitor Landscape Overview" icon={<UsersIcon className="w-8 h-8"/>}>
+      <Card title="Competitor Landscape Overview">
         <div className="space-y-4">
           <p>
             The digital diagnostics market for neurodegenerative diseases is dynamic and innovative. Key players 
@@ -510,7 +468,7 @@ const CompetitorsSection: React.FC = () => {
         </div>
         <div>
           <p className="font-semibold">Brand Image & Awareness</p>
-          <p>Built on scientific credibility, tech advancements, and regulatory validation. Recognitions (e.g., TIME's "Best Invention" for Linus Health's DCTclock™) and publications are key.</p>
+          <p>Built on scientific credibility, tech advancements, and regulatory validation. Recognitions (e.g., TIME&apos;s &quot;Best Invention&quot; for Linus Health&apos;s DCTclock™) and publications are key.</p>
         </div>
         <div>
           <p className="font-semibold">Expert Feedback</p>
@@ -544,7 +502,7 @@ const CompetitorsSection: React.FC = () => {
         currentSortConfig={sortConfigSummary}
       />
 
-      <Card title="Qualitative Assessment & Strategic Positioning" icon={<LightBulbIcon className="w-8 h-8"/>}>
+      <Card title="Qualitative Assessment & Strategic Positioning">
         <p className="mb-2"><strong>Brand Image &amp; Awareness:</strong> Built on scientific credibility, tech advancements, and regulatory validation. Recognitions (e.g., TIME&apos;s &quot;Best Invention&quot; for Linus Health&apos;s DCTclock™) and publications are key (p.100).</p>
         <p className="mb-2"><strong>Expert Feedback:</strong> Crucial for acceptance. Testimonials for RetiSpec (early AD dx), Altoida (prodromal AD), Darmiyan (MCI prognosis), C. Light (objective eye metrics) highlight utility (p.100-101).</p>
         <p className="mb-2"><strong>Market Evolution:</strong> Expected growth, potential consolidation. Challenges include data privacy, interoperability, reimbursement. Opportunities in prodromal stages, personalized interventions, global expansion (p.106).</p>
@@ -553,5 +511,4 @@ const CompetitorsSection: React.FC = () => {
     </section>
   );
 };
-
 export default CompetitorsSection;

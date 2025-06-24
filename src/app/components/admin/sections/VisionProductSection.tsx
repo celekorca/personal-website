@@ -7,15 +7,12 @@ import EHRIntegrationSection from './EHRIntegrationSection';
 
 export default function VisionProductSection() {
   return (
-    <section id="vision" className="py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header className="text-center mb-6">
+    <section id="vision" className="py-1">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-2">
+        <header className="text-center mb-2">
           <h2 className="text-2xl font-semibold text-gray-800">Product Development</h2>
-          <p className="text-sm text-gray-600 mt-2">
-            Development lifecycle and technology stack powering Mely&apos;s diagnostic platform
-          </p>
         </header>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Card 1: AI Development Lifecycle */}
           <div className="bg-white overflow-hidden shadow rounded-lg">
