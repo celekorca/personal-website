@@ -35,14 +35,16 @@ export default function SalesMarketingTab() {
         </p>
         <div className="flex flex-wrap gap-6 justify-center mb-4">
           <FeatureCard title="What is Mely?" icon={<FaBrain className="text-indigo-500" />}>
-            <div className="mb-2 font-semibold">🧠 AI-Powered Platform</div>
-            Leveraging advanced AI and ML to analyze complex neuro data for deeper insights.&lt;br /&gt;
-            &lt;div className=&quot;mb-2 mt-2 font-semibold&quot;&gt;📊 Objective Digital Biomarkers&lt;/div&gt;
-            Capturing cognitive &amp; motor data to generate rich, objective biomarkers.
-            <div className="mb-2 mt-2 font-semibold">💊 Accelerating Research &amp; Therapy</div>
-            Capturing cognitive & motor data to generate rich, objective biomarkers.
-            <div className="mb-2 mt-2 font-semibold">💊 Accelerating Research & Therapy</div>
-            Provides robust, standardized, high-quality data for pharma and research.
+            <div className="space-y-2">
+              <div className="font-semibold">🧠 AI-Powered Platform</div>
+              <p>Leveraging advanced AI and ML to analyze complex neuro data for deeper insights.</p>
+              
+              <div className="font-semibold pt-2">📊 Objective Digital Biomarkers</div>
+              <p>Capturing cognitive & motor data to generate rich, objective biomarkers.</p>
+              
+              <div className="font-semibold pt-2">💊 Accelerating Research & Therapy</div>
+              <p>Provides robust, standardized, high-quality data for pharma and research.</p>
+            </div>
           </FeatureCard>
           <FeatureCard title="Key User Benefits" icon={<FaUsers className="text-green-500" />}>
             <div className="mb-2 font-semibold">🎯 Enhanced Diagnostic Confidence</div>

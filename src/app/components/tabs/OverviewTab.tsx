@@ -1,5 +1,6 @@
-import { FaTabletAlt, FaDna, FaDatabase, FaLightbulb, FaCrosshairs, FaExclamationTriangle } from 'react-icons/fa';
-import { GiBrain } from 'react-icons/gi';
+import { FaTabletAlt, FaDna, FaDatabase, FaLightbulb, FaCrosshairs, FaExclamationTriangle, FaUsers, FaChartLine, FaDollarSign, FaKey, FaUnlockAlt, FaCogs, FaClipboardList, FaChartBar, FaTools, FaClipboardCheck } from 'react-icons/fa';
+import { GiBrain, GiSandsOfTime } from 'react-icons/gi';
+import { MdOutlineSpeed, MdOutlineTrendingUp, MdOutlineAnalytics } from 'react-icons/md';
 import InfoTooltip from './InfoTooltip';
 import ProcessStep from './ProcessStep';
 import ArrowIcon from './ArrowIcon';
@@ -133,6 +134,158 @@ export default function OverviewTab() {
             </li>
           </ul>
 
+        </div>
+      </div>
+
+      {/* Lean Canvas Section */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-navy-800 mb-6 flex items-center">
+          <FaClipboardList className="mr-2" />
+          MELY Lean Canvas
+        </h2>
+
+        {/* First Row - 5 columns */}
+        <div className="grid grid-cols-5 gap-4 mb-4">
+          {/* Problem */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-red-500">
+            <h3 className="font-semibold text-lg mb-2 text-red-600">Problem</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Need for accessible, reliable and affordable tools for neurodegenerative disease (ND) diagnosis and follow up</li>
+              <li>• Aid specialists in preliminary screenings for ND</li>
+              <li>• Objective biomarkers to measure drug efficacy in ND clinical trials</li>
+            </ul>
+          </div>
+
+          {/* Solution */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-green-500">
+            <h3 className="font-semibold text-lg mb-2 text-green-600">Solution</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• AI-powered digital assessments</li>
+              <li>• Rapid, objective testing (under 20 min)</li>
+              <li>• Digital biomarkers for early detection</li>
+              <li>• Accessible tablet/VR platform</li>
+            </ul>
+          </div>
+
+          {/* Unique Value Proposition */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-purple-500">
+            <h3 className="font-semibold text-lg mb-2 text-purple-600">Unique Value Proposition</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• First AI platform combining tablet & VR</li>
+              <li>• 80% faster than traditional methods</li>
+              <li>• 30% more accurate than standard assessments</li>
+              <li>• Scalable digital solution</li>
+            </ul>
+          </div>
+
+          {/* Unfair Advantage */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-yellow-500">
+            <h3 className="font-semibold text-lg mb-2 text-yellow-600">Unfair Advantage</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Proprietary AI algorithms</li>
+              <li>• Strong IP portfolio</li>
+              <li>• Expert team in neuro + AI</li>
+              <li>• First-mover advantage in digital biomarkers</li>
+            </ul>
+          </div>
+
+          {/* Customer Segments */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-indigo-500">
+            <h3 className="font-semibold text-lg mb-2 text-indigo-600">Customer Segments</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Neurologists & clinicians</li>
+              <li>• Pharmaceutical companies</li>
+              <li>• Research institutions</li>
+              <li>• Clinical trial organizations</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Second Row - 5 columns */}
+        <div className="grid grid-cols-5 gap-4 mb-4">
+          {/* Existing Alternatives */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-gray-400">
+            <h3 className="font-semibold text-lg mb-2 text-gray-700">Existing Alternatives</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Traditional cognitive assessments</li>
+              <li>• Paper-based questionnaires</li>
+              <li>• Basic digital assessments</li>
+              <li>• In-person neurological exams</li>
+              <li>• MRI/CT scans</li>
+            </ul>
+          </div>
+
+          {/* Key Metrics */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-blue-500">
+            <h3 className="font-semibold text-lg mb-2 text-blue-600">Key Metrics</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Number of assessments completed</li>
+              <li>• Accuracy of predictions</li>
+              <li>• Time to diagnosis</li>
+              <li>• User engagement rates</li>
+              <li>• Clinical validation results</li>
+            </ul>
+          </div>
+
+          {/* High-Level Concept */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-teal-500">
+            <h3 className="font-semibold text-lg mb-2 text-teal-600">High-Level Concept</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• AI-powered digital neurology platform</li>
+              <li>• Combines tablet and VR for comprehensive assessment</li>
+              <li>• Generates objective digital biomarkers</li>
+              <li>• Enables early detection and monitoring</li>
+            </ul>
+          </div>
+
+          {/* Channels */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-pink-500">
+            <h3 className="font-semibold text-lg mb-2 text-pink-600">Channels</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Direct sales to healthcare providers</li>
+              <li>• Partnerships with pharma for trials</li>
+              <li>• Research institution collaborations</li>
+              <li>• Medical conferences and publications</li>
+            </ul>
+          </div>
+
+          {/* Early Adopters */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-orange-500">
+            <h3 className="font-semibold text-lg mb-2 text-orange-600">Early Adopters</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Progressive neurology clinics</li>
+              <li>• Academic medical centers</li>
+              <li>• Pharma R&D departments</li>
+              <li>• Clinical research organizations</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Third Row - 2 columns */}
+        <div className="grid grid-cols-2 gap-4">
+          {/* Cost Structure */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-gray-600">
+            <h3 className="font-semibold text-lg mb-2 text-gray-700">Cost Structure</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• R&D and AI development</li>
+              <li>• Clinical validation studies</li>
+              <li>• Regulatory compliance and approvals</li>
+              <li>• Sales and marketing</li>
+              <li>• Platform maintenance and support</li>
+            </ul>
+          </div>
+
+          {/* Revenue Streams */}
+          <div className="bg-white p-4 rounded-lg shadow-md border-t-4 border-green-600">
+            <h3 className="font-semibold text-lg mb-2 text-green-700">Revenue Streams</h3>
+            <ul className="text-xs text-gray-700 space-y-1">
+              <li>• Subscription model for clinics/hospitals</li>
+              <li>• Per-assessment pricing for providers</li>
+              <li>• Licensing to pharma for clinical trials</li>
+              <li>• Research grants and partnerships</li>
+              <li>• Enterprise solutions for large providers</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

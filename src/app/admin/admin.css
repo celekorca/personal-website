@@ -1,0 +1,98 @@
+/* Custom styles for the admin dashboard */
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 240px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -120px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Gantt chart styles */
+.gantt-grid {
+  display: grid;
+  grid-template-columns: 150px repeat(20, minmax(0, 1fr));
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gantt-grid {
+    grid-template-columns: 100px repeat(20, minmax(0, 1fr));
+    font-size: 0.7rem;
+  }
+  
+  .chart-container {
+    max-width: 150px;
+    height: 150px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .shadow-lg, .shadow-md, .shadow-sm {
+    box-shadow: none !important;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .bg-white {
+    background-color: white !important;
+  }
+  
+  .bg-gray-50, .bg-gray-100 {
+    background-color: #f9fafb !important;
+  }
+}
