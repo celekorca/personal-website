@@ -8,6 +8,7 @@ import SalesMarketingTab from './components/tabs/SalesMarketingTab';
 import CommunicationTab from './components/tabs/CommunicationTab';
 import ResourcesTab from './components/tabs/ResourcesTab';
 import MarketTab from './components/tabs/MarketTab';
+import ThreeYearPerspectiveTab from './components/tabs/ThreeYearPerspectiveTab';
 
 const tabs = [
   { id: 'overview', label: 'Overview', component: <OverviewTab /> },
@@ -18,7 +19,7 @@ const tabs = [
   { id: 'resources', label: 'Resources', component: <ResourcesTab /> },
   { id: 'administration', label: 'Administration', component: <PlaceholderTab tabName="Administration" /> },
   { id: 'finance', label: 'Finance', component: <PlaceholderTab tabName="Finance" /> },
-  { id: 'perspectives', label: 'In 3 Years', component: <PlaceholderTab tabName="3-Year Perspective" /> },
+  { id: 'perspectives', label: 'In 3 Years', component: <ThreeYearPerspectiveTab /> },
 ];
 
 export default function Home() {

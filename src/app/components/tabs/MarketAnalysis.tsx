@@ -72,12 +72,14 @@ const MarketAnalysis: React.FC = () => {
       <div className="grid md:grid-cols-2 gap-6">
         {/* Left Card - Market Overview */}
         <Card title="Market Overview" icon={<LightBulbIcon className="w-6 h-6" />}>
-          <p className="mb-4">
-            The AI-powered neurodiagnostics market is expanding rapidly due to unmet needs in diagnosing conditions like Parkinson&apos;s, Alzheimer&apos;s, Schizophrenia, and MS. France offers a dynamic landscape with strong government backing for AI and digital health, but also a cost-conscious healthcare system. MELY&apos;s strategic focus on digital biomarkers derived from VR/tablet interactions positions it at the forefront of this nascent field.
-          </p>
-          <p>
-            Digital and AI-driven sub-segments boast high CAGRs (often &gt;20%), indicating a clear market shift. The French digital neuro biomarkers market, with a 26.3% CAGR, is particularly promising.
-          </p>
+          <div className="space-y-4">
+            <p>
+              The AI-powered neurodiagnostics market is expanding rapidly due to unmet needs in diagnosing conditions like Parkinson&apos;s, Alzheimer&apos;s, Schizophrenia, and MS. France offers a dynamic landscape with strong government backing for AI and digital health, but also a cost-conscious healthcare system. MELY&apos;s strategic focus on digital biomarkers derived from VR/tablet interactions positions it at the forefront of this nascent field.
+            </p>
+            <p>
+              Digital and AI-driven sub-segments boast high CAGRs (often &gt;20%), indicating a clear market shift. The French digital neuro biomarkers market, with a 26.3% CAGR, is particularly promising.
+            </p>
+          </div>
         </Card>
 
         {/* Right Card - Market Size & Growth Snapshot */}
